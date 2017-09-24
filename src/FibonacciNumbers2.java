@@ -7,16 +7,16 @@ public class FibonacciNumbers2 {
         int number = scanner.nextInt();
         int x1 = 0;
         int x2 = 1;
-        String result = "Fibonacci Numbers: ";
-        System.out.println();
+        System.out.print("Fibonacci Numbers: ");
+        Result(x1, x2, number);
 
 
     }
         public static void Result(int x1, int x2, int number) {
-            if (number > x2) {
+            if (number < x1 + x2) {
                 return;
             }
-            System.out.println(x2 + " ");
+            System.out.print(x2 + " ");
             Result(x2, (x2 + x1), number);
         }
 
